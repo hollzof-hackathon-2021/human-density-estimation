@@ -8,7 +8,17 @@ numpy==1.20.3
     # via
     #   -r requirements.in
     #   torch
-torch==1.8.1
+    #   torchvision
+pillow==8.2.0
+    # via torchvision
+timm==0.4.5
     # via -r requirements.in
+torch==1.8.1
+    # via
+    #   -r requirements.in
+    #   timm
+    #   torchvision
+torchvision==0.9.1
+    # via timm
 typing-extensions==3.10.0.0
     # via torch
